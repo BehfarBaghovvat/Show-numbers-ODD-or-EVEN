@@ -4,10 +4,11 @@
     {
         static void Main(string[] args)
         {
-            int EnterNumber, Odd, Even, Result;
-            string SelectOption,Number;
+            int enternumberInt, resultInt;
+            string selectoptionString,numberString;
 
-            System.Console.WriteLine("          ======================SHOW NUMBERS OOD OR EVEN======================");
+            System.Console.WriteLine
+                ("          ======================SHOW NUMBERS OOD OR EVEN======================");
 
             System.Console.WriteLine();
 
@@ -17,41 +18,43 @@
                 System.Console.Write
                 ("Please specify the end of the numbers: ");
 
-                Number =System.Console.ReadLine();                
+                numberString =System.Console.ReadLine();                
 
-                if (Number=="0" || Number=="")
+                if (numberString=="0" || numberString=="")
                 {
 
                     break;  
 
                 }
 
-                EnterNumber = int.Parse(Number);
+                enternumberInt = int.Parse(numberString);
 
                 System.Console.WriteLine();
 
                 System.Console.Write
                     ("Please specify the [ODD] or [EVEN] numbers: ");
 
-                SelectOption = System.Console.ReadLine().ToString();
+                selectoptionString = System.Console.ReadLine().ToString();
 
                 System.Console.WriteLine();
 
-                if (SelectOption == "ODD" || SelectOption == "odd" ||
-                    SelectOption == "Odd" || SelectOption == "oDD")
+                if (selectoptionString == "ODD" || selectoptionString == "odd" ||
+                    selectoptionString == "Odd" || selectoptionString == "oDD")
                 {
 
-                    System.Console.WriteLine("ODD Numbers Is:");
+                    System.Console.WriteLine
+                        ("ODD Numbers Is:");
 
                     System.Console.WriteLine();
 
-                    for (int i = 1; i < EnterNumber; i++)
+                    for (int i = 1; i < enternumberInt; i++)
                     {
-                        Result = i % 2;
+                        resultInt = i % 2;
 
-                        if (Result == 1)
+                        if (resultInt == 1)
                         {
-                            System.Console.WriteLine("Number: " + i);
+                            System.Console.WriteLine
+                                ("Number: " + i);
 
                             System.Console.WriteLine();
 
@@ -60,28 +63,31 @@
                     }
 
                 }
-                else if (SelectOption == "EVEN" || SelectOption == "even" ||
-                    SelectOption == "Even" || SelectOption == "eVEN")
+                else if (selectoptionString == "EVEN" ||
+                    selectoptionString == "even" ||
+                    selectoptionString == "Even" ||
+                    selectoptionString == "eVEN")
                 {
 
-                    System.Console.WriteLine("EVEN Numbers Is:");
+                    System.Console.WriteLine
+                        ("EVEN Numbers Is:");
 
                     System.Console.WriteLine();
 
-                    for (int i = 1; i < EnterNumber; i++)
+                    for (int i = 1; i < enternumberInt; i++)
                     {
 
-                        Result = i % 2;
+                        resultInt = i % 2;
 
-                        if (Result == 0)
+                        if (resultInt == 0)
                         {
 
-                            System.Console.WriteLine("Number: " + i);
+                            System.Console.WriteLine
+                                ("Number: " + i);
 
                             System.Console.WriteLine();
 
                         }
-
                     }
 
                 }
@@ -89,29 +95,12 @@
                 else
                 {
 
-                    System.Console.WriteLine("Out of range. Please try again...! ");
+                    System.Console.WriteLine
+                        ("Out of range. Please try again...! ");
 
                 }
 
             } while (true);
-            
-            
-            
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             System.Console.WriteLine();
             System.Console.WriteLine();
